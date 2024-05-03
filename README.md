@@ -33,14 +33,6 @@ The connection string is currently being fetched from **ConnectionStrings.DBConn
 
 The [SQL Server](https://www.microsoft.com/sql-server/sql-server-2019?rtc=1) queries I'm using are just examples, adapt to your own database schema and needs.
 
-## JWT Authentication
-
-JWT configuration is currently being fetched from **JWT** in **appsettings.json**.
-
- - **Issuer** - Add your JWT issuer;
- - **Key** - Add your JWT key;
- - **ExpireMinutes** - Add your JWT expiration minutes - evaluate accordingly, it might make sense to automatically refresh the JWT in prod;
-
 ## Docker
 
 Since this is a [.NET 5.0](https://docs.microsoft.com/en-us/dotnet/core/dotnet-five) project, it is cross-platform and this means it can also be easily containerized in Docker. Obviously, this doesn't mean you need to run this project in Docker, however the option is available. If you're using Visual Studio, you can easily switch between debug profiles on the debug dropdown.
@@ -51,28 +43,13 @@ I suggest exploring **Dockerfile** and **launchSettings.json** for more informat
 
 ### Auth
 
- - **POST /api/Auth/Login** - Login with username and password. No previous authorization required.
- - **POST /api/Auth/Register** - Register with username, email, name and password. No previous authorization required.
- - **GET /api/Auth/Session** - Returns the session data for this user.
+ - **POST /api/Auth/Login** - Ok si existe el usuario
+
  
 ### Notes
 
- - **GET /api/Notes** - Returns all the Notes for this user.
- - **POST /api/Notes** - Creates a new Note for this user.
- - **GET /api/Notes/{id}** - Returns a specific Note (id) for this user.
- - **PUT /api/Notes/{id}** - Updates a specific Note (id) for this user.
- - **DELETE /api/Notes/{id}** - Deletes a specific Note (id) for this user.
+ - **POST /api/Awa** - agregar awita
+ - **GET /api/Awa/{id}** - cabecera
+ - **GET /api/Awa/AwaDetail/{id}** - detalle
+
  
-## Engines
-
-### DBEngine
-
-Use DBEngine as a template to your own database interface. In my case: Dapper and SQL Server. 
-
-Check IDBEngine for more information on the methods.
-
-### CryptoEngine
-
-Use CryptoEngine to execute cryptography methods. This is basically a wrapper for [CryptoHelper](https://github.com/henkmollema/CryptoHelper). 
-
-Check ICryptoEngine for more information on the methods.
