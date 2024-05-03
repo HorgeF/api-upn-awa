@@ -25,6 +25,6 @@
 
  - **POST /api/Awa** - agregar awita
  - **GET /api/Awa/{id}** - cabecera
- - **GET /api/Awa/AwaDetail/{id}** - detalle
+ - **GET /api/AwaDetail/{id}** - detalle
 
  
