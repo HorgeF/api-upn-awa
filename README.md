@@ -4,7 +4,7 @@
 
 .NET 5.0 Docker-ready C# REST API example using JWT authentication, Swagger, Newtonsoft JSON, and Dapper with SQL Server.
 
-![net5-webapi](https://github.com/nunogois/net5-webapi/blob/master/net5-webapi-thumbnail.png)
+
 
 ![.NET 5.0](https://img.shields.io/badge/-.NET_5.0-141321?style=for-the-badge&logo=.net&logoColor=ba46d8)&nbsp;
 ![C#](https://img.shields.io/badge/-C%23-141321?style=for-the-badge&logo=c-sharp&logoColor=239120)&nbsp;
