@@ -21,10 +21,17 @@
  - **POST /api/Auth/Login** - Ok si existe el usuario
 
  
-### Notes
+### AWA
 
  - **POST /api/Awa** - agregar awita
  - **GET /api/Awa/{id}** - cabecera
  - **GET /api/AwaDetail/{id}** - detalle
+ 
+ 
+### AZURE
+
+ 
+ https://awa-webapi20240503164201.azurewebsites.net/api/Awa/1
+ https://awa-webapi20240503164201.azurewebsites.net/api/AwaDetail/1
 
  
